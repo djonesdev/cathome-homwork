@@ -8,7 +8,7 @@
 
 c1 = Cat.create!(name: "greg", age: 2)
 c2 = Cat.create!(name: "John", age: 2)
-c3 = Cat.crete!(name: "Jackson", age: 3)
+c3 = Cat.create!(name: "Jackson", age: 3)
 
 h1 = Home.create!(address: "somewhere")
 h2 = Home.create!(address: "over the rainbow")
@@ -17,4 +17,3 @@ CatHome.create(cat_id: c1.id, home_id: h1.id)
 CatHome.create(cat_id: c3.id, home_id: h2.id)
 CatHome.create(cat_id: c2.id, home_id: h1.id)
 
-puts "youre seeded"
